@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Replica</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Inter', sans-serif; }
+  .ring-svg { transform: rotate(-90deg); }
+</style>
+</head>
+
+<body class="bg-[#f4f6f9] text-[#5f6b85]">
+
+<div class="flex min-h-screen">
+
+  <!-- SIDEBAR -->
+  <aside class="w-24 bg-[#1f2d4a] flex flex-col items-center py-8 space-y-10 shadow-xl">
+   
+
+    <div class="flex flex-col items-center space-y-8 mt-10">
+      <img src="./images/Thick.png">
+    </div>
+
+   
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <div class="flex-1 p-10">
+
+    <!-- TOP -->
+    <div class="flex justify-between items-center mb-10">
+      <div class="flex items-center space-x-4">
+    
+        <div>
+         <img src="./images/British School 1.png">
+        </div>
+      </div>
+
+      <div class="flex items-center space-x-6">
+        <span class="text-sm text-gray-400">...Administrator/<span class="text-yellow-500">Dashboard</span></span>
+        <input class="w-96 px-5 py-3 rounded-xl bg-white shadow-sm outline-none text-sm"
+               placeholder="Search..." />
+        <div class="flex items-center bg-white px-4 py-2 rounded-xl shadow-sm space-x-3">
+          <div class="w-8 h-8 bg-gray-300 rounded-full">
+            <img src="./images/unsplash_wRdYnqXtyYk.png">
+          </div>
+          <span class="text-sm">User</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-12 gap-8">
+
+      <!-- LEFT AREA -->
+      <div class="col-span-9 space-y-8">
+
+        <!-- STAT CARDS -->
+        <div class="grid grid-cols-3 gap-8">
+          
+          <!-- CARD -->
+          <div class="bg-white rounded-2xl p-6 shadow-sm flex items-center space-x-6">
+            <svg class="ring-svg" width="90" height="90">
+              <circle cx="45" cy="45" r="35" stroke="#e5e7eb" stroke-width="8" fill="none"/>
+              <circle cx="45" cy="45" r="35" stroke="#f59e0b"
+                stroke-width="8" stroke-dasharray="220" stroke-dashoffset="80" fill="none"/>
+            </svg>
+            <div>
+              <h3 class="font-semibold text-[#1f2d4a]">STUDENTS</h3>
+              <p class="text-xs text-gray-400 mb-1">Male (61%) &nbsp; Female (39%)</p>
+              <p class="text-2xl font-bold text-[#1f2d4a]">308</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 shadow-sm flex items-center space-x-6">
+            <svg class="ring-svg" width="90" height="90">
+              <circle cx="45" cy="45" r="35" stroke="#e5e7eb" stroke-width="8" fill="none"/>
+              <circle cx="45" cy="45" r="35" stroke="#f59e0b"
+                stroke-width="8" stroke-dasharray="220" stroke-dashoffset="120" fill="none"/>
+            </svg>
+            <div>
+              <h3 class="font-semibold text-[#1f2d4a]">STAFF</h3>
+              <p class="text-xs text-gray-400 mb-1">Male (55%) &nbsp; Female (45%)</p>
+              <p class="text-2xl font-bold text-[#1f2d4a]">100</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 shadow-sm flex items-center space-x-6">
+            <svg class="ring-svg" width="90" height="90">
+              <circle cx="45" cy="45" r="35" stroke="#e5e7eb" stroke-width="8" fill="none"/>
+              <circle cx="45" cy="45" r="35" stroke="#f59e0b"
+                stroke-width="8" stroke-dasharray="220" stroke-dashoffset="110" fill="none"/>
+            </svg>
+            <div>
+              <h3 class="font-semibold text-[#1f2d4a]">SUBJECTS</h3>
+              <p class="text-xs text-gray-400 mb-1">Science (50%) &nbsp; Arts (50%)</p>
+              <p class="text-2xl font-bold text-[#1f2d4a]">50</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CHARTS -->
+        <div class="grid grid-cols-2 gap-8">
+
+          <!-- ATTENDANCE -->
+          <div class="bg-white rounded-2xl p-6 shadow-sm">
+            <div class="flex justify-between mb-4">
+              <h3 class="font-semibold text-[#1f2d4a]">Attendance Summary</h3>
+              <div class="space-x-2">
+                <button class="bg-gray-100 px-3 py-1 rounded-md text-sm">Monthly</button>
+                <button class="bg-gray-100 px-3 py-1 rounded-md text-sm">Students</button>
+              </div>
+            </div>
+
+            <div class="h-56 bg-gradient-to-t from-blue-100 to-white rounded-xl"></div>
+          </div>
+
+          <!-- FINANCIAL -->
+          <div class="bg-white rounded-2xl p-6 shadow-sm">
+            <h3 class="font-semibold text-[#1f2d4a] mb-4">Financial Summary</h3>
+            <div class="flex items-end justify-between h-56 space-x-6">
+              <div class="w-4 bg-[#1f2d4a] h-40 rounded"></div>
+              <div class="w-4 bg-blue-300 h-32 rounded"></div>
+              <div class="w-4 bg-[#1f2d4a] h-28 rounded"></div>
+              <div class="w-4 bg-blue-300 h-20 rounded"></div>
+              <div class="w-4 bg-[#1f2d4a] h-16 rounded"></div>
+              <div class="w-4 bg-blue-300 h-10 rounded"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- USERS TABLE -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <div class="flex justify-between mb-6">
+            <h3 class="font-semibold text-[#1f2d4a]">Recently registered users</h3>
+            <span class="text-sm text-gray-400">view all users</span>
+          </div>
+
+          <table class="w-full text-sm">
+            <thead class="text-gray-400 border-b">
+              <tr>
+                <th class="py-3 text-left">Name</th>
+                <th>ID</th>
+                <th>Role</th>
+                <th>Gender</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y">
+              <tr>
+                <td class="py-4">ActiveEdge Technologies</td>
+                <td>AET154-5671</td>
+                <td>Teacher</td>
+                <td>Male</td>
+                <td>activeedgetechnologies@gmail...</td>
+              </tr>
+              <tr>
+                <td class="py-4">ActiveEdge Technologies</td>
+                <td>AET154-5671</td>
+                <td>Teacher</td>
+                <td>Male</td>
+                <td>activeedgetechnologies@gmail...</td>
+              </tr>
+              <tr>
+                <td class="py-4">ActiveEdge Technologies</td>
+                <td>AET154-5671</td>
+                <td>Teacher</td>
+                <td>Male</td>
+                <td>activeedgetechnologies@gmail...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- RIGHT SIDEBAR -->
+      <div class="col-span-3 space-y-8">
+
+        <!-- CALENDAR -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <h3 class="font-semibold text-[#1f2d4a] mb-4">April, 2022</h3>
+          <div class="grid grid-cols-7 text-center text-sm gap-2 text-gray-400">
+            <div>Sun</div><div>Mon</div><div>Tue</div>
+            <div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div class="bg-blue-400 text-white rounded-lg py-2">1</div>
+            <div>2</div>
+          </div>
+        </div>
+
+        <!-- EVENTS -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm space-y-4">
+          <h3 class="font-semibold text-[#1f2d4a]">Upcoming events</h3>
+
+          <div class="bg-yellow-100 p-4 rounded-xl">
+            <p class="font-semibold">Saturday</p>
+            <p class="text-xs text-gray-500">Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="bg-green-100 p-4 rounded-xl">
+            <p class="font-semibold">Saturday</p>
+            <p class="text-xs text-gray-500">Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="bg-red-100 p-4 rounded-xl">
+            <p class="font-semibold">Saturday</p>
+            <p class="text-xs text-gray-500">Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="bg-gray-200 p-4 rounded-xl">
+            <p class="font-semibold">Saturday</p>
+            <p class="text-xs text-gray-500">Lorem ipsum dolor sit amet.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

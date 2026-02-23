@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-screen bg-gray-100">
+
+  <div class="flex flex-col md:flex-row h-full">
+
+    <!-- LEFT SECTION -->
+    <div class="relative md:w-1/2 w-full flex items-center justify-center overflow-hidden">
+      
+      <!-- Decorative Circles -->
+      <div class="absolute w-24 h-24 bg-white/30 rounded-full top-20 left-20"></div>
+      <div class="absolute w-16 h-16 bg-white/30 rounded-full bottom-32 right-24"></div>
+      <div class="absolute w-10 h-10 bg-white/30 rounded-full top-1/3 right-1/4"></div>
+      <div class="absolute w-6 h-6 bg-white/30 rounded-full bottom-1/4 left-1/3"></div>
+
+      <!-- Student Image -->
+      <img src="./images/girlleft.png"
+           alt="Student"
+           class="object-cover">
+    </div>
+
+
+    <!-- RIGHT SECTION -->
+    <div class="md:w-1/2 w-full bg-gray-50 flex items-center justify-center px-6 py-10">
+
+      <div class="w-full max-w-md">
+
+        <!-- Logo -->
+        <div class="flex items-center space-x-3 mb-6">
+          <div class="">
+            <img src="./images/British School 1.png">
+          </div>
+          <div>
+            
+          </div>
+        </div>
+
+        <!-- Title -->
+        <h1 class="text-3xl font-semibold text-gray-700 mb-2">
+          Registration Form
+        </h1>
+
+        <p class="text-sm text-gray-500 mb-6">
+          Already have an account?
+          <a href="#" class="text-yellow-500 font-medium">Login</a>
+        </p>
+
+        <!-- Form -->
+        <form class="space-y-4">
+
+          <!-- Name Row -->
+          <div class="flex space-x-4">
+            <input type="text" placeholder="First Name *"
+              class="w-1/2 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <input type="text" placeholder="Last Name *"
+              class="w-1/2 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+          </div>
+
+          <input type="email" placeholder="Enter Email *"
+            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+          <input type="email" placeholder="Confirm Email *"
+            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+          <!-- Phone + Token -->
+          <div class="flex space-x-4">
+            <input type="text" placeholder="Phone Number *"
+              class="w-1/2 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <input type="text" placeholder="Token *"
+              class="w-1/2 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+          </div>
+
+          <!-- Gender + Department -->
+          <div class="flex items-center justify-between">
+            <div class="space-x-4 text-gray-600">
+              <label><input type="checkbox" class="mr-1"> Male</label>
+              <label><input type="checkbox" class="mr-1"> Female</label>
+            </div>
+
+            <select class="px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+              <option>Department</option>
+              <option>Science</option>
+              <option>Arts</option>
+              <option>Commercial</option>
+            </select>
+          </div>
+
+          <!-- Register Button -->
+          <button type="submit"
+            class="w-full mt-6 py-3 rounded-full bg-gradient-to-r from-blue-400 to-yellow-400 text-white font-semibold shadow-md hover:opacity-90 transition">
+            REGISTER
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
